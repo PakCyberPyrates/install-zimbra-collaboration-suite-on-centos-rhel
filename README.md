@@ -5,7 +5,9 @@ yum -y install unzip net-tools sysstat openssh-clients perl-core libaio nmap-nca
 2.
 
 getenforce
+
 setenforce 0
+
 getenforce
 
 
@@ -13,5 +15,7 @@ getenforce
 
 
 systemctl stop postfix
+
 systemctl disable postfix
+
 yum remove postfix
